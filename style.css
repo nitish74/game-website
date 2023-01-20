@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color:rgb(18, 0, 0);
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+/* searchbox */
+header .action .SearchBx {
+    padding: 4px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(18, 0, 0);
+    border-radius: 45px;
+}
+
+header .action .SearchBx i {
+    font-size: 0.7em;
+    margin: 1px;
+    color: black;
+}
+
+header .action .SearchBx input {
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    color: black;
+}
+
+/* logo */
+header .logo {
+    position: relative;
+    color: blue;
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: 1000;
+}
+
+/* navbar */
+header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    color: blue;
+}
+
+header ul li a {
+    color: blue;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover {
+    background-color: grey;
+    color: black;
+    box-shadow: blue;
+}
+
+/* banner */
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+    height: 570px;
+    border-radius: 10px;
+}
+
+.slideshow-container {
+    max-width: 1258px;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #202124;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* footer section */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    color: white;
+  }
+  
+  .footer1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+  }
+  .social-media a {
+    color: white;
+    margin: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+  }
+  .social-media a ion-icon {
+    color: white;
+    background-color: black;
+  }
+  .social-media a:hover ion-icon {
+    color: red;
+    transform: translateY(5px);
+  }
+  .footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+  }
+  .footer0 {
+    font-weight: 1200;
+    transition-duration: 1s;
+  }
+  .footer0:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .heading {
+    font-weight: 900;
+    font-size: 18px;
+  }
+  .footer3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer2 .heading:hover {
+    color: rgb(243, 168, 7);
+  }
+  .footer2 .div:hover {
+    transform: scale(1.05);
+  }
+  .footer3 h4 {
+    margin: 0 10px;
+  }
+  .footer2 div {
+    margin: 10px;
+  }

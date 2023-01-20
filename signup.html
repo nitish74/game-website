@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">RedBeard</a>
+
+        <!-- search button -->
+        <div class="action">
+            <div class="SearchBx">
+                <a href="#"><i class='bx bxs-search'></i></a>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="game.html">Games</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="signin.html">SignIn</a></li>
+            <li><a href="signup.html">SignUp</a></li>
+        </ul>
+    </header>
+
+    <!-- signup -->
+    <div id="mid-section" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKXjZ1s1yANwXOvdcne6jZ3ef1MOMEkgfT5rPeko0ISEwIwAx6pRirRzlGzO74WliUtw&usqp=CAU');">
+        <div id="loginpopup">
+            <form id="form">      
+                <div id="create">
+                    <h3>Create Your Account</h3>
+                    <a href="signin.html"><p class="none">Sign In</p></a>
+                </div>
+                
+               
+                <div id="createbottom">
+                <input id="name" type="text" placeholder="Nick Name">
+                <input id="email" type="text" placeholder="Email address">
+                <input id="pass" type="password" placeholder="Password">
+                </div>
+                <div id="createbottom2">
+                    <input id="access" type="text" placeholder="Access Code">
+                    <img src="./Images/captcha.PNG" alt="">
+                </div>
+                <div id="createbottom3">
+                    <input type="checkbox">
+                    <p>I agree <span class="privacy">Terms of Use</span> & <span class="privacy">Privacy Policy.</span> </p>
+                </div>
+
+                <button type="submit" id="createac">Create Account</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+<script src="signup.js"></script>
+</html>
